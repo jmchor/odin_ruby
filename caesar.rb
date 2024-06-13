@@ -15,3 +15,11 @@ def caesar_cypher(string, shift)
         end
     end.join
 end
+
+puts "Give me a string"
+string = gets.chomp
+
+puts "Give me a shift"
+shift = gets.chomp.to_i
+puts "Here is your encrypted string:"
+puts caesar_cypher(string, shift)
